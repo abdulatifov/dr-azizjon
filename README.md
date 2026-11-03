@@ -25,7 +25,7 @@ O'zbek (HTML ichida) va rus (`app.js` ichidagi `RU` lug'at).
 
 ## Doktor tasdiqlashi kerak
 - Raqamlar: 6 500+ operatsiya, 60 000+ konsultatsiya, 10 yil.
-- Tibbiy jumlalar: "chandiqsiz", "tez tiklanish", "kamroq og'riq", HoLEP.
+- Tibbiy jumlalar: "chandiqsiz", "tez tiklanish", "og'riq deyarli sezilmaydi", HoLEP.
 - Ayollar bo'limi (siydik tutolmaslik) va bolalar bo'limi (tug'ma o'zgarishlar) - doktor bularni davolashini tasdiqlasin.
 - Tajriba yillari va kurslar.
 - "Odatda bir necha soat ichida javob beramiz" va'dasi.
