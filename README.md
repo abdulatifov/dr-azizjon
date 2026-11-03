@@ -34,3 +34,4 @@ O'zbek (HTML ichida) va rus (`app.js` ichidagi `RU` lug'at).
 ```
 cd site && python3 -m http.server 8765
 ```
+- Savol-javob: ish vaqti (Du-Sha 09:00-18:00), tosh o'lchamlari (4 mm / 7 mm), kasalxonada 1 kun, to'lqin bilan maydalash, narkoz. Bot va qo'llanma matnlaridan olingan, doktor yana bir ko'rib chiqsin.
