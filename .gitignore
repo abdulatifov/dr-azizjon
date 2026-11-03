@@ -1,3 +1,6 @@
 .DS_Store
 .playwright-cli/
+# raw photos and internal notes stay local only
 manba/
+hujjatlar/
+00-BOSHLASH-SHU-YERDAN.md
