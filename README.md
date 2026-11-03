@@ -9,7 +9,7 @@ Instagram bio uchun mo'ljallangan, telefon uchun birinchi navbatda.
 
 ## Sahifa bloklari
 1. Hero: rasm, ism, 3 raqam, "Qabulga yozilish" va qo'ng'iroq.
-2. Yo'nalishlar (accordion): tosh, prostata, yallig'lanish, erkaklar salomatligi, bolalar urologiyasi.
+2. Yo'nalishlar (3 guruh): erkaklar, ayollar, chaqaloq va bolalar.
 3. Nega chandiqsiz jarrohlik: 3 afzallik.
 4. Qabul qanday o'tadi: 3 qadam.
 5. 16 ta sertifikat (galereya + kattalashtirish).
@@ -26,6 +26,7 @@ O'zbek (HTML ichida) va rus (`app.js` ichidagi `RU` lug'at).
 ## Doktor tasdiqlashi kerak
 - Raqamlar: 6 500+ operatsiya, 60 000+ konsultatsiya, 10 yil.
 - Tibbiy jumlalar: "chandiqsiz", "tez tiklanish", "kamroq og'riq", HoLEP.
+- Ayollar bo'limi (siydik tutolmaslik) va bolalar bo'limi (tug'ma o'zgarishlar) - doktor bularni davolashini tasdiqlasin.
 - Tajriba yillari va kurslar.
 - "Odatda bir necha soat ichida javob beramiz" va'dasi.
 

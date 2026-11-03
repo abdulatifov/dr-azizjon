@@ -4,20 +4,27 @@
   /* ---------- Russian translations (Uzbek text lives in the HTML) ---------- */
   const RU = {
     kicker: 'Уролог-эндоуролог · хирург',
-    lead: 'Лечу камни в почках, простату и болезни мочевыводящих путей современным методом без разрезов.',
+    n1: 'Азизжон', n2: 'Юсуфжонов',
+    lead: 'Лечу камни в почках, болезни мочевыводящих путей и простаты у мужчин, женщин и детей современным методом без разрезов.',
     st1: 'операций', st2: 'консультаций', st3: 'лет опыта',
     book: 'Записаться на приём', call: 'Позвонить',
     where: 'Yunusobod Medical Center, Ташкент',
-    p_eye: 'Направления', p_h: 'Что вас беспокоит?', p_sub: 'Нажмите на свою проблему и получите короткий ответ.',
-    p1: 'Камни в почках и мочеточнике',
-    p1t: 'Приступообразная боль в пояснице или боку, кровь в моче. Камень во многих случаях можно раздробить и удалить эндоскопом через мочевые пути, без разрезов. Какой метод подходит именно вам, скажу после осмотра.',
-    p2: 'Увеличение простаты',
-    p2t: 'Частые ночные походы в туалет, слабая струя, чувство неполного опорожнения. Такие состояния лечат современными эндоскопическими методами, в том числе лазерной операцией HoLEP.',
-    p3: 'Воспаление мочевых путей',
-    p3t: 'Жжение при мочеиспускании, частые позывы, боль внизу живота. Если это повторяется снова и снова, нужно найти причину и вылечить её.',
-    p4: 'Мужское здоровье',
-    p4t: 'Деликатные проблемы рассматриваются конфиденциально и с уважением. Не стесняйтесь: это обычный медицинский вопрос, и его можно решить.',
-    p5: 'Детская урология', p5t: 'Осмотр, консультация и лечение урологических проблем у детей.',
+    p_eye: 'Направления', p_h: 'Что вас беспокоит?', p_sub: 'Нажмите на свою группу.',
+    g1: 'Урологические проблемы у мужчин', g1s: 'Простата, камни, воспаление, деликатные вопросы',
+    g1i1: '<b>Увеличение простаты:</b> частые ночные походы в туалет, слабая струя, чувство неполного опорожнения. Лечится современными эндоскопическими методами, в том числе лазерной операцией HoLEP.',
+    g1i2: '<b>Камни в почках и мочеточнике:</b> приступообразная боль в пояснице или боку, кровь в моче. Во многих случаях камень дробят и удаляют эндоскопом, без разрезов.',
+    g1i3: '<b>Воспаление:</b> жжение при мочеиспускании, частые позывы, боль внизу живота.',
+    g1i4: '<b>Мужское здоровье:</b> деликатные проблемы рассматриваются конфиденциально и с уважением. Не стесняйтесь, это обычный медицинский вопрос.',
+    g2: 'Урологические проблемы у женщин', g2s: 'Цистит, недержание мочи, камни',
+    g2i1: '<b>Рецидивирующий цистит:</b> жжение при мочеиспускании, частые позывы. Если повторяется, нужно найти причину и вылечить её.',
+    g2i2: '<b>Недержание мочи:</b> подтекание мочи при кашле, смехе или напряжении.',
+    g2i3: '<b>Камни в почках и мочеточнике:</b> приступообразная боль, кровь в моче. Во многих случаях удаляются без разрезов.',
+    g2i4: 'Осмотр проходит бережно, с уважением и конфиденциально.',
+    g3: 'Проблемы у младенцев и детей', g3s: 'Детская урология',
+    g3i1: '<b>Врождённые изменения:</b> осмотр и лечение урологических пороков, выявленных в младенчестве и детстве.',
+    g3i2: '<b>Инфекции мочевых путей:</b> у ребёнка температура, плач или беспокойство при мочеиспускании.',
+    g3i3: '<b>Проблемы с мочеиспусканием:</b> частое или затруднённое мочеиспускание, ночное недержание.',
+    g3i4: 'Прошёл специальное повышение квалификации по детской урологии.',
     p_btn: 'Записаться с этой проблемой →',
     w_eye: 'Метод', w_h: 'Почему хирургия без разрезов?',
     w1: 'Без разрезов', w1t: 'Инструмент вводится через естественные пути организма. На коже не остаётся шрамов.',
@@ -49,7 +56,8 @@
     b_h: 'Как с вами связаться?', b_sub: 'Выберите удобный способ. Обычно отвечаем в течение нескольких часов.',
     b1: 'Через Telegram-бот', b1t: 'Отправьте вопрос, запись быстрая',
     b2: 'Написать доктору в Telegram', b3: 'Написать в Instagram', b4: 'Позвонить',
-    close: 'Закрыть'
+    close: 'Закрыть',
+    a_call: 'Позвонить', a_prev: 'Предыдущий', a_next: 'Следующий', a_dock: 'Быстрая связь'
   };
   const META = {
     uz: { title: 'Azizjon Yusufjonov - urolog-endourolog, Toshkent' },
@@ -57,12 +65,15 @@
   };
 
   const nodes = [...document.querySelectorAll('[data-i18n]')];
-  const UZ = {};
-  nodes.forEach(n => { UZ[n.dataset.i18n] = n.textContent; });
+  const ariaNodes = [...document.querySelectorAll('[data-i18n-aria]')];
+  const UZ = {}, UZA = {};
+  nodes.forEach(n => { UZ[n.dataset.i18n] = n.innerHTML; });
+  ariaNodes.forEach(n => { UZA[n.dataset.i18nAria] = n.getAttribute('aria-label'); });
 
   function setLang(lang) {
     const dict = lang === 'ru' ? RU : UZ;
-    nodes.forEach(n => { const v = dict[n.dataset.i18n]; if (v) n.textContent = v; });
+    nodes.forEach(n => { const v = dict[n.dataset.i18n]; if (v) n.innerHTML = v; });
+    ariaNodes.forEach(n => { const k = n.dataset.i18nAria; const v = lang === 'ru' ? RU[k] : UZA[k]; if (v) n.setAttribute('aria-label', v); });
     document.documentElement.lang = lang;
     document.title = META[lang].title;
     document.querySelectorAll('.lang button').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.lang === lang)));
@@ -101,16 +112,26 @@
     document.body.style.overflow = '';
     if (lastFocus) lastFocus.focus();
   }
+  sheet.addEventListener('keydown', e => {
+    if (e.key !== 'Tab') return;
+    const f = [...sheet.querySelectorAll('a,button')].filter(el => el.offsetParent !== null);
+    const first = f[0], last = f[f.length - 1];
+    if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+    else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+  });
   document.querySelectorAll('[data-open="book"]').forEach(b => b.addEventListener('click', openSheet));
   sheet.querySelectorAll('[data-close]').forEach(b => b.addEventListener('click', closeSheet));
 
   /* ---------- Certificates gallery + lightbox ---------- */
-  const CERTS = ['c13','c12','c10','c16','c1','c0','c6','c7','c15','c8','c9','c14','c2','c5','c3','c4'];
+  // [file id, thumbnail height at 400px width] - sizes keep the strip stable before images load
+  const CERT_DIMS = [['c13',274],['c12',272],['c10',504],['c16',566],['c1',232],['c0',280],['c6',282],['c7',572],['c15',284],['c8',380],['c9',284],['c14',276],['c2',268],['c5',564],['c3',542],['c4',284]];
+  const CERTS = CERT_DIMS.map(d => d[0]);
   const gallery = document.getElementById('gallery');
-  CERTS.forEach((c, i) => {
+  CERT_DIMS.forEach(([c, h], i) => {
     const b = document.createElement('button');
     b.setAttribute('aria-label', 'Sertifikat ' + (i + 1));
-    b.innerHTML = '<img src="img/sert-' + c + '-k.jpg" alt="" loading="lazy" decoding="async">';
+    b.style.aspectRatio = 400 + ' / ' + h;
+    b.innerHTML = '<img src="img/sert-' + c + '-k.jpg" alt="" width="400" height="' + h + '" loading="lazy" decoding="async">';
     b.addEventListener('click', () => openLb(i));
     gallery.appendChild(b);
   });

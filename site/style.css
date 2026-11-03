@@ -48,13 +48,13 @@ main{max-width:var(--col);margin:0 auto}
 .top.solid .brand{opacity:1}
 .brand img{width:32px;height:32px;border-radius:50%;object-fit:cover;border:1px solid var(--line2)}
 .lang{display:flex;background:rgba(10,28,42,.7);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border:1px solid var(--line2);border-radius:99px;padding:3px}
-.lang button{font-size:12.5px;font-weight:700;letter-spacing:.04em;padding:6px 12px;border-radius:99px;color:var(--muted);transition:.2s}
+.lang button{font-size:13px;font-weight:700;letter-spacing:.04em;padding:10px 14px;min-width:46px;border-radius:99px;color:var(--muted);transition:.2s}
 .lang button[aria-pressed="true"]{background:var(--text);color:var(--bg)}
 
 /* hero */
 .hero{position:relative}
 .hero-photo{position:relative;height:min(118vw,600px);overflow:hidden}
-.hero-photo img{width:100%;height:100%;object-fit:cover;object-position:50% 18%}
+.hero-photo img{width:100%;height:100%;object-fit:cover;object-position:50% 22%}
 .hero-photo::after{content:"";position:absolute;inset:0;
   background:linear-gradient(180deg,rgba(6,19,29,.35) 0%,rgba(6,19,29,0) 22%,rgba(6,19,29,0) 45%,rgba(6,19,29,.85) 78%,var(--bg) 100%)}
 .hero-body{position:relative;margin-top:-150px;z-index:2}
@@ -100,9 +100,18 @@ h3{font-size:17px;font-weight:700;letter-spacing:-.01em}
 .acc summary::after{content:"";margin-left:auto;width:10px;height:10px;border-right:2px solid var(--muted);border-bottom:2px solid var(--muted);transform:rotate(45deg) translateY(-3px);transition:transform .25s;flex:none}
 .acc details[open] summary::after{transform:rotate(225deg) translate(-2px,-1px)}
 .ic{color:var(--teal);font-size:11px}
+.g-ic{width:44px;height:44px;border-radius:13px;display:grid;place-items:center;flex:none;background:rgba(60,195,178,.1);color:var(--teal);border:1px solid rgba(60,195,178,.22)}
+.g-ic svg{width:22px;height:22px}
+.g-t{display:flex;flex-direction:column;line-height:1.3}
+.g-t small{font-weight:500;font-size:13.5px;color:var(--muted);margin-top:3px}
+.groups .acc-body{padding-left:18px}
+.ilist{list-style:none;display:grid;gap:12px}
+.ilist li{position:relative;padding-left:16px}
+.ilist li::before{content:"";position:absolute;left:0;top:.62em;width:6px;height:6px;border-radius:50%;background:var(--teal)}
+.ilist b{color:var(--text);font-weight:700}
 .acc-body{padding:0 18px 18px 41px;color:#c3d3dc;font-size:15.5px}
 .faq .acc-body{padding-left:18px}
-.link-btn{margin-top:12px;color:var(--warm);font-weight:700;font-size:15px}
+.link-btn{display:inline-block;padding:10px 0;margin-top:4px;color:var(--warm);font-weight:700;font-size:15px}
 
 /* why */
 .strip{display:grid;grid-template-columns:1.25fr 1fr 1fr;gap:8px;margin-top:22px;height:210px}
@@ -125,7 +134,7 @@ h3{font-size:17px;font-weight:700;letter-spacing:-.01em}
 .gallery::-webkit-scrollbar{display:none}
 .gallery button{flex:0 0 auto;height:200px;scroll-snap-align:start;border-radius:14px;overflow:hidden;border:1px solid var(--line2);background:#fff;transition:transform .2s}
 .gallery button:hover{transform:translateY(-3px)}
-.gallery img{height:100%;width:auto;object-fit:cover}
+.gallery img{height:100%;width:100%;object-fit:cover}
 
 /* timeline */
 .timeline{list-style:none;margin-top:22px;border-left:1px solid var(--line2);margin-left:6px}
