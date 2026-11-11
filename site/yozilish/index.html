@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Doktorga yozish - Dr. Azizjon Yusufjonov</title>
-<meta name="description" content="Buyrak toshini kesiksiz, lazer bilan olib tashlash. 3 ta savolga javob bering va doktorga Telegram'da yozing.">
+<meta name="description" content="Buyrak toshini hech qanday kesmalarsiz olib tashlash. 3 ta savolga javob bering va doktorga Telegram'da yozing.">
 <meta name="robots" content="noindex">
-<meta name="theme-color" content="#06131d">
+<meta name="theme-color" content="#ffffff">
 <link rel="icon" href="../img/avatar.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,7 +17,7 @@
 window.LP = {
   // Meta Pixel ID (Events Manager → Data sources). Bo'sh bo'lsa, Pixel ishlamaydi.
   pixelId: "",
-  // Kimga qancha bemor yuboriladi (og'irlik). Masalan 70/30.
+  // Kimga qancha bemor yuboriladi (og'irlik).
   doctors: [
     { username: "Urologist_dr_Aziz",  weight: 30 },   // doktor
     { username: "javlonbeck_mamirov", weight: 70 }    // shogird
@@ -42,85 +42,78 @@ if (window.LP.pixelId) {
 </script>
 
 <style>
-:root{--bg:#06131d;--line:rgba(160,205,225,.14);--line2:rgba(160,205,225,.24);--text:#eef5f8;--muted:#93a9b6;--teal:#3cc3b2;--warm:#ffb661;--tg1:#37aee2;--tg2:#1e96c8;--safe-b:env(safe-area-inset-bottom,0px)}
+:root{
+  --bg:#ffffff; --text:#14232b; --muted:#5b6b73; --line:#dde4e7;
+  --ok:#16a34a; --ok-bg:#effaf3; --ok-text:#14532d;
+  --tg:#229ed9; --off:#e9eef1; --off-text:#8a979e;
+  --safe-b:env(safe-area-inset-bottom,0px);
+}
 *{box-sizing:border-box;margin:0;padding:0}
 html{-webkit-text-size-adjust:100%}
-body{font-family:Manrope,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--text);line-height:1.5;-webkit-font-smoothing:antialiased;
-  background-image:radial-gradient(700px 480px at 50% -10%,rgba(60,195,178,.14),transparent 60%);background-attachment:fixed;
-  padding-bottom:calc(120px + var(--safe-b))}
-main{max-width:520px;margin:0 auto;padding:22px 20px 0}
-button{font:inherit;color:inherit;background:none;border:0;cursor:pointer;-webkit-tap-highlight-color:transparent}
-:focus-visible{outline:2px solid var(--teal);outline-offset:3px;border-radius:10px}
-.hero{display:flex;gap:14px;align-items:center}
-.hero img{width:76px;height:76px;border-radius:50%;object-fit:cover;object-position:58% 0;border:2px solid rgba(60,195,178,.5);flex:none}
-.hero small{display:block;color:var(--teal);font-size:12.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase}
-.hero b{display:block;font-size:21px;font-weight:800;letter-spacing:-.02em;line-height:1.15}
-h1{font-size:25px;font-weight:800;line-height:1.2;letter-spacing:-.02em;margin:18px 0 0}
-h1 span{color:var(--warm)}
-.trust{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:14px}
-.trust div{background:rgba(255,255,255,.04);border:1px solid var(--line);border-radius:12px;padding:9px 6px;text-align:center}
-.trust b{display:block;font-size:16px;font-weight:800}
-.trust span{font-size:11.5px;color:var(--muted)}
-.prog{display:flex;gap:6px;margin:20px 0 4px}
-.prog i{flex:1;height:4px;border-radius:4px;background:rgba(255,255,255,.1);transition:background .25s}
-.prog i.on{background:var(--teal)}
-fieldset{border:0;margin-top:16px}
-legend{font-size:15.5px;font-weight:700;margin-bottom:10px;display:flex;gap:9px;align-items:center}
-legend em{font-style:normal;width:24px;height:24px;border-radius:50%;background:rgba(60,195,178,.15);color:var(--teal);font-size:12.5px;display:grid;place-items:center;flex:none;transition:.2s}
-fieldset.done legend em{background:var(--teal);color:var(--bg)}
-.opts{display:flex;flex-wrap:wrap;gap:8px}
-.o{border:1px solid var(--line2);border-radius:99px;padding:11px 16px;font-size:15px;font-weight:600;color:#cfdde4;background:rgba(255,255,255,.03);min-height:44px;transition:.15s}
-.o[aria-pressed="true"]{background:var(--teal);border-color:var(--teal);color:#04151f;font-weight:800}
-select{width:100%;appearance:none;-webkit-appearance:none;font:inherit;font-size:15.5px;font-weight:600;color:var(--text);background:rgba(255,255,255,.03) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%2393a9b6' stroke-width='2'/%3E%3C/svg%3E") no-repeat right 16px center;border:1px solid var(--line2);border-radius:14px;padding:13px 16px;min-height:48px}
-select:invalid{color:var(--muted)}
-select.on{border-color:var(--teal)}
+body{font-family:Manrope,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--text);line-height:1.45;-webkit-font-smoothing:antialiased;padding-bottom:calc(120px + var(--safe-b))}
+main{max-width:480px;margin:0 auto;padding:22px 20px 0}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer;-webkit-tap-highlight-color:transparent;text-align:left}
+:focus-visible{outline:2px solid var(--ok);outline-offset:2px;border-radius:12px}
+
+.hd{display:flex;gap:12px;align-items:center}
+.hd img{width:58px;height:58px;border-radius:50%;object-fit:cover;object-position:58% 0;flex:none}
+.hd b{display:block;font-size:17px;font-weight:700;line-height:1.2}
+.hd small{font-size:13px;color:var(--muted)}
+h1{font-size:23px;font-weight:800;line-height:1.25;letter-spacing:-.01em;margin:18px 0 4px}
+.sub{font-size:14.5px;color:var(--muted)}
+
+fieldset{border:0;margin-top:20px}
+legend{font-size:15.5px;font-weight:700;margin-bottom:9px}
+.op{width:100%;display:flex;justify-content:space-between;align-items:center;gap:10px;
+  border:1.5px solid var(--line);border-radius:12px;padding:13px 15px;font-size:15.5px;font-weight:600;
+  margin-bottom:8px;background:#fff;min-height:50px;transition:border-color .15s,background .15s}
+.op::after{content:"";width:18px;height:18px;flex:none}
+.op[aria-pressed="true"]{border-color:var(--ok);background:var(--ok-bg);color:var(--ok-text)}
+.op[aria-pressed="true"]::after{content:"✓";color:var(--ok);font-weight:800;text-align:center}
+
+select{width:100%;appearance:none;-webkit-appearance:none;font:inherit;font-size:15.5px;font-weight:600;color:var(--text);
+  background:#fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%238a979e' stroke-width='2'/%3E%3C/svg%3E") no-repeat right 16px center;
+  border:1.5px solid var(--line);border-radius:12px;padding:13px 15px;min-height:50px}
+select:invalid{color:var(--off-text)}
+select.on{border-color:var(--ok);background-color:var(--ok-bg);color:var(--ok-text)}
 option{color:#000}
-.cta{position:fixed;left:0;right:0;bottom:0;padding:12px 20px calc(14px + var(--safe-b));background:linear-gradient(180deg,rgba(6,19,29,0),rgba(6,19,29,.92) 30%);z-index:10}
-.cta-in{max-width:480px;margin:0 auto}
-.btn{width:100%;display:flex;align-items:center;justify-content:center;gap:10px;border-radius:16px;padding:17px;font-size:16.5px;font-weight:800;min-height:56px;transition:.2s}
-.btn[disabled]{background:rgba(255,255,255,.07);color:#6f8592;border:1px dashed var(--line2);cursor:not-allowed}
-.btn:not([disabled]){background:linear-gradient(180deg,var(--tg1),var(--tg2));color:#fff;box-shadow:0 10px 26px rgba(30,150,200,.45)}
+
+.call{margin-top:22px;font-size:13.5px;color:var(--muted);text-align:center}
+.call a{color:var(--text);font-weight:700}
+
+.cta{position:fixed;left:0;right:0;bottom:0;padding:12px 20px calc(12px + var(--safe-b));background:linear-gradient(180deg,rgba(255,255,255,0),#fff 28%);z-index:10}
+.cta-in{max-width:440px;margin:0 auto}
+.btn{width:100%;display:flex;align-items:center;justify-content:center;gap:10px;border-radius:14px;padding:16px;font-size:17px;font-weight:800;min-height:56px;text-align:center;transition:background .2s}
+.btn[disabled]{background:var(--off);color:var(--off-text);cursor:not-allowed}
+.btn:not([disabled]){background:var(--tg);color:#fff;box-shadow:0 8px 20px rgba(34,158,217,.3)}
 .btn svg{width:22px;height:22px;fill:currentColor}
-.hint{font-size:12.5px;color:var(--muted);text-align:center;margin-top:8px}
-.foot{margin-top:26px;font-size:12.5px;color:var(--muted);text-align:center}
-.foot a{color:var(--teal)}
+.hint{font-size:13px;color:var(--off-text);text-align:center;margin-top:8px}
 </style>
 </head>
 <body>
 <main>
-  <div class="hero">
-    <img src="../img/doktor.jpg" alt="Doktor Azizjon Yusufjonov" width="76" height="76">
-    <div><small>Urolog-endourolog</small><b>Dr. Azizjon<br>Yusufjonov</b></div>
+  <div class="hd">
+    <img src="../img/doktor.jpg" alt="Doktor Azizjon Yusufjonov" width="58" height="58">
+    <div><b>Dr. Azizjon Yusufjonov</b><small>Urolog-endourolog · 6 500+ operatsiya</small></div>
   </div>
-  <h1>Buyrak toshini <span>kesiksiz, lazer bilan</span> olib tashlash</h1>
-  <div class="trust">
-    <div><b>6 500+</b><span>operatsiya</span></div>
-    <div><b>10 yil</b><span>tajriba</span></div>
-    <div><b>Toshkent</b><span>Yunusobod MC</span></div>
-  </div>
-
-  <div class="prog" aria-hidden="true"><i></i><i></i><i></i></div>
+  <h1>Buyrak toshini hech qanday kesmalarsiz olib tashlash</h1>
+  <p class="sub">3 ta savolga javob bering — doktor Telegram'da javob beradi</p>
 
   <fieldset id="q1">
-    <legend><em>1</em>Sizni nima bezovta qilyapti?</legend>
-    <div class="opts">
-      <button type="button" class="o" aria-pressed="false" data-v="Buyrak / siydik yo'li toshi">Buyrak / siydik yo'li toshi</button>
-      <button type="button" class="o" aria-pressed="false" data-v="Prostata">Prostata</button>
-      <button type="button" class="o" aria-pressed="false" data-v="Boshqa urologik muammo">Boshqa urologik muammo</button>
-    </div>
+    <legend>1. Sizni nima bezovta qilyapti?</legend>
+    <button type="button" class="op" aria-pressed="false" data-v="Buyrak / siydik yo'li toshi">Buyrak / siydik yo'li toshi</button>
+    <button type="button" class="op" aria-pressed="false" data-v="Prostata">Prostata</button>
+    <button type="button" class="op" aria-pressed="false" data-v="Boshqa urologik muammo">Boshqa urologik muammo</button>
   </fieldset>
 
   <fieldset id="q2">
-    <legend><em>2</em>Tekshiruvdan o'tganmisiz?</legend>
-    <div class="opts">
-      <button type="button" class="o" aria-pressed="false" data-v="UZI/KT'da aniqlangan">Ha, UZI/KT'da aniqlangan</button>
-      <button type="button" class="o" aria-pressed="false" data-v="og'riq bor, hali tekshirilmaganman">Og'riq bor, hali tekshirilmaganman</button>
-    </div>
+    <legend>2. Tekshiruvdan o'tganmisiz?</legend>
+    <button type="button" class="op" aria-pressed="false" data-v="UZI/KT'da aniqlangan">Ha, UZI/KT'da aniqlangan</button>
+    <button type="button" class="op" aria-pressed="false" data-v="og'riq bor, hali tekshirilmaganman">Og'riq bor, hali tekshirilmaganman</button>
   </fieldset>
 
   <fieldset id="q3">
-    <legend><em>3</em>Qaysi viloyatdansiz?</legend>
-    <label for="city" style="position:absolute;left:-9999px">Viloyat</label>
+    <legend><label for="city">3. Qaysi viloyatdansiz?</label></legend>
     <select id="city" required>
       <option value="" disabled selected>Viloyatni tanlang</option>
       <option>Toshkent shahri</option><option>Toshkent viloyati</option><option>Andijon</option><option>Buxoro</option>
@@ -130,14 +123,12 @@ option{color:#000}
     </select>
   </fieldset>
 
-  <p class="foot">Yoki qo'ng'iroq qiling: <a href="tel:+998998426170">+998 99 842 61 70</a></p>
+  <p class="call">Yoki qo'ng'iroq qiling: <a href="tel:+998998426170">+998 99 842 61 70</a></p>
 </main>
 
 <div class="cta"><div class="cta-in">
-  <button class="btn" id="go" disabled>
-    <span id="goTxt">🔒 Avval 3 ta savolga javob bering</span>
-  </button>
-  <p class="hint">Doktor shaxsan javob beradi · savol berish bepul</p>
+  <button class="btn" id="go" disabled>Savollarga javob bering</button>
+  <p class="hint">Savol berish bepul</p>
 </div></div>
 
 <script>
@@ -159,20 +150,13 @@ option{color:#000}
   }
 
   function refresh(){
-    var n = 0;
-    ['q1','q2','q3'].forEach(function(k,i){
-      var ok = !!ans[k]; if (ok) n++;
-      document.getElementById(k).classList.toggle('done', ok);
-      document.querySelectorAll('.prog i')[i].classList.toggle('on', ok);
-    });
-    var ready = n === 3;
+    var ready = ans.q1 && ans.q2 && ans.q3;
     go.disabled = !ready;
-    go.innerHTML = ready ? TG_ICON + '<span>Doktorga Telegram\'da yozish</span>'
-                         : '<span>🔒 Avval 3 ta savolga javob bering</span>';
+    go.innerHTML = ready ? TG_ICON + "<span>Doktorga Telegram'da yozish</span>" : 'Savollarga javob bering';
   }
 
   ['q1','q2'].forEach(function(k){
-    var btns = document.querySelectorAll('#'+k+' .o');
+    var btns = document.querySelectorAll('#'+k+' .op');
     btns.forEach(function(b){
       b.addEventListener('click', function(){
         btns.forEach(function(x){ x.setAttribute('aria-pressed','false') });
@@ -187,9 +171,8 @@ option{color:#000}
     var doc = pickDoctor();
     var text = "Assalomu alaykum, doktor! " + ans.q1 + ", " + ans.q2 + ". Maslahat olmoqchiman. Viloyat: " + ans.q3 + ". " + LP.tag;
     var url = 'https://t.me/' + encodeURIComponent(doc) + '?text=' + encodeURIComponent(text);
-    // Meta qoidasi: sog'liq haqidagi javoblar (muammo, UZI) Pixel'ga yuborilmaydi — faqat "Lead" hodisasi
+    // Meta qoidasi: sog'liq haqidagi javoblar Pixel'ga yuborilmaydi — faqat "Lead" hodisasi
     if (window.fbq) fbq('track', 'Lead');
-    // Pixel so'rovi ketishiga ulgurishi uchun kichik pauza
     setTimeout(function(){ location.href = url; }, 300);
   });
 
